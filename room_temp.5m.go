@@ -50,8 +50,7 @@ func main() {
 	}
 
 	for _, d := range devices {
-		fmt.Printf("%.1f ℃\n", d.NewestEvents.Te.Val)
-		fmt.Printf("%.1f ％\n", d.NewestEvents.Hu.Val)
+		fmt.Printf("%.1f ℃ / %.1f ％\n", d.NewestEvents.Te.Val, d.NewestEvents.Hu.Val)
 	}
 	os.Exit(0)
 }
